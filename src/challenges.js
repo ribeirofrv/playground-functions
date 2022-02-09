@@ -33,11 +33,23 @@ function highestCount(arrayOfNumbers) {
   return count;
 }
 
-// Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+// Desafio 7 (Math.abs -> valor ABSoluto)
+function catAndMouse(mouse, cat1, cat2) {
+  const cat1Distance = Math.abs(mouse - cat1);
+  const cat2Distance = Math.abs(mouse - cat2);
+  let result;
 
+  if (cat1Distance === cat2Distance) {
+    result = 'os gatos trombam e o rato foge';
+  } else if (cat1Distance < cat2Distance) {
+    result = 'cat1';
+  } else {
+    result = 'cat2';
+  }
+
+  return result;
+}
+console.log(catAndMouse());
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
