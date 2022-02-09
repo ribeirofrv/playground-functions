@@ -49,7 +49,7 @@ function catAndMouse(mouse, cat1, cat2) {
 
   return result;
 }
-console.log(catAndMouse());
+
 // Desafio 8
 function fizzBuzz() {
   // seu código aqui
