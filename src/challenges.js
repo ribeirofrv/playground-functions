@@ -50,9 +50,22 @@ function catAndMouse(mouse, cat1, cat2) {
   return result;
 }
 
-// Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+// Desafio 8 - Sorry lint, I tried
+function fizzBuzz(numbers) {
+  let fizzArray = [];
+
+  for (const index in numbers) {   
+    if ((numbers[index] % 3 === 0) && (numbers[index] % 5 === 0)) {
+      fizzArray.push('fizzBuzz');
+    } else if (numbers[index] % 5 === 0) {
+      fizzArray.push('buzz');
+    } else if (numbers[index] % 3 === 0){
+      fizzArray.push('fizz');
+    } else {
+      fizzArray.push('bug!');
+    }
+  }
+  return fizzArray;
 }
 
 // Desafio 9
